@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Registro do usuário </title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form>
+                <label for="nomeCompleto">Nome completo</label> <br>
+                <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Digite seu nome completo..." required><br>
+                <label for="E-mail">E-mail</label><br>
+                <input type="email" name="E-mail" id="email" placeholder="Digite seu E-mail..." required><br>
+                <label for="senha">Senha</label><br>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required><br>
+                <label for="idade">Idade</label><br>
+                <input type="number" name="idade" id="idade" min = "18" max = "100" placeholder="Escolha sua idade..." required><br>
+                <label for="genero">Gênero</label><br>
+                <select> 
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select><br>
+                <input type="checkbox" name="acordoTermos" id="acordoTermos" required>
+                <label for="">Concordo com os termos</label><br>
+                <button onclick="validacao()">Enviar</button><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
